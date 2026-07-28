@@ -1,40 +1,5 @@
 
-# Serverless Stack
 
-A modern full-stack application built with TypeScript, React, and Node.js.
-
-
-## Tech Stack
-
-- **Package Manager**: pnpm workspaces
-- **Runtime**: Node.js 24
-- **Language**: TypeScript 5.9
-- **Frontend**: React 19, Vite 7
-- **Backend**: Express 5
-- **Database**: PostgreSQL with Drizzle ORM
-- **Validation**: Zod
-- **Styling**: TailwindCSS 4
-- **Build**: esbuild
-
-## Project Structure
-
-This is a monorepo using pnpm workspaces:
-
-- `artifacts/` - Application artifacts (frontend apps, API server)
-- `lib/` - Shared libraries and integrations
-- `scripts/` - Build and utility scripts
-
-## Getting Started
-
-### Prerequisites
-
-- Node.js 24+
-- pnpm 9+
-- PostgreSQL 16+
-
-### Installation
-=======
-<div align="center">
 
 # 🌐 Slang Translator
 
