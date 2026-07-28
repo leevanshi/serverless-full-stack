@@ -1,7 +1,8 @@
-<<<<<<< HEAD
+
 # Serverless Stack
 
 A modern full-stack application built with TypeScript, React, and Node.js.
+
 
 ## Tech Stack
 
