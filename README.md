@@ -3,6 +3,8 @@
 
 # 🌐 Slang Translator
 
+<img width="1285" height="641" alt="image" src="https://github.com/user-attachments/assets/db4b7901-5fde-4991-afc4-c037f21eaee2" />
+
 ### Translate slang, internet lingo, and regional expressions — powered by OpenAI.
 
 A full-stack SaaS application built on a **pnpm monorepo** with a contract-first API, React 19 frontend, Express 5 backend, PostgreSQL database, and a dedicated OpenAI integration layer.
