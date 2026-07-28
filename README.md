@@ -1,10 +1,43 @@
+<<<<<<< HEAD
+# Serverless Stack
+
+A modern full-stack application built with TypeScript, React, and Node.js.
+
+## Tech Stack
+
+- **Package Manager**: pnpm workspaces
+- **Runtime**: Node.js 24
+- **Language**: TypeScript 5.9
+- **Frontend**: React 19, Vite 7
+- **Backend**: Express 5
+- **Database**: PostgreSQL with Drizzle ORM
+- **Validation**: Zod
+- **Styling**: TailwindCSS 4
+- **Build**: esbuild
+
+## Project Structure
+
+This is a monorepo using pnpm workspaces:
+
+- `artifacts/` - Application artifacts (frontend apps, API server)
+- `lib/` - Shared libraries and integrations
+- `scripts/` - Build and utility scripts
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js 24+
+- pnpm 9+
+- PostgreSQL 16+
+
+### Installation
+=======
 <div align="center">
 
 # 🌐 Slang Translator
 
 ### Translate slang, internet lingo, and regional expressions — powered by OpenAI.
-<img width="1333" height="635" alt="image" src="https://github.com/user-attachments/assets/5fde924a-0874-4284-8df0-715e740b2223" />
-
 
 A full-stack SaaS application built on a **pnpm monorepo** with a contract-first API, React 19 frontend, Express 5 backend, PostgreSQL database, and a dedicated OpenAI integration layer.
 
@@ -129,11 +162,77 @@ cd serverless-full-stack
 ```
 
 ### 2. Install dependencies
+>>>>>>> 442ec6fdf3d65d846472567268b55c81b41e3880
 
 ```bash
 pnpm install
 ```
 
+<<<<<<< HEAD
+### Environment Variables
+
+Create a `.env` file in the root directory with the following variables:
+
+```env
+DATABASE_URL=postgresql://user:password@localhost:5432/dbname
+AI_INTEGRATIONS_OPENAI_API_KEY=your_openai_api_key
+AI_INTEGRATIONS_OPENAI_BASE_URL=https://api.openai.com/v1
+```
+
+### Running the Project
+
+```bash
+# Run the API server
+pnpm --filter @workspace/api-server run dev
+
+# Run typecheck across all packages
+pnpm run typecheck
+
+# Build all packages
+pnpm run build
+
+# Regenerate API hooks and Zod schemas from OpenAPI spec
+pnpm --filter @workspace/api-spec run codegen
+
+# Push DB schema changes (dev only)
+pnpm --filter @workspace/db run push
+```
+
+## Development
+
+### Database Setup
+
+```bash
+# Push schema changes to database
+pnpm --filter @workspace/db run push
+
+# Generate database client
+pnpm --filter @workspace/db run generate
+```
+
+### API Development
+
+The API server uses OpenAPI specifications. After modifying the OpenAPI spec:
+
+```bash
+pnpm --filter @workspace/api-spec run codegen
+```
+
+This regenerates:
+- TypeScript types
+- React hooks for API calls
+- Zod schemas for validation
+
+## Available Scripts
+
+- `pnpm run typecheck` - Full typecheck across all packages
+- `pnpm run build` - Typecheck + build all packages
+- `pnpm run typecheck:libs` - Typecheck library packages only
+
+## License
+
+MIT
+=======
 ### 3. Configure environment variables
 
 ```bash
@@ -232,3 +331,4 @@ git push origin feature/your-feature-name
 ## 📄 License
 
 Licensed under the [MIT License](./LICENSE).
+>>>>>>> 442ec6fdf3d65d846472567268b55c81b41e3880
